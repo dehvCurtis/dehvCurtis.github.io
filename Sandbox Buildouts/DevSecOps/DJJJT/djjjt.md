@@ -71,7 +71,13 @@ Create new pipeline item
 #### Deploy to Prod (`/opt/tomcat`)
 Add SSH key for Jenkins -> Tomcat
 - SSH into Box2 (Tomcat Server)
-- [Create SSH key](https://dehvcurtis.github.io/Wiki/Linux/SSH/)
+- Add SSH key to Box1 (Jenkins)
+  - For this walkthrough, I'll be using the SSH key I use to connect my Mac to my AWS nodes. This is not a secure practice.
+  - On Local Machine, get AWS SSH key
+  - `cat ~/.ssh/<key>.pem`
+  - Log on to Box1 (Jenkins)
+  - `nano ~/.ssh/<key>.pem` use same key name as local machine
+  - `chmod 400 ~/.ssh/<key>.pem`
 - Open Jenkins UI
   - Click `Jenkins > Credentials > System > Global credentials (unrestricted) > Add Credentials`
     - Kind: `SSH Username with private key`
@@ -80,7 +86,7 @@ Add SSH key for Jenkins -> Tomcat
     - Username: `ubuntu`
     - Private Key: `<paste private key created above>`
     
-- Add the following to the `Jenkinsfile`
+- Add the following to the `Jenkinsfile` and commit so Jenkins will see the update
 ```yaml
     stage ('Tomcat-Deploy') {
       steps {
@@ -90,3 +96,4 @@ Add SSH key for Jenkins -> Tomcat
       }
     }
 ```
+
