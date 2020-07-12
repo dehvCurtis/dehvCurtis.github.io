@@ -44,10 +44,14 @@ docker-ce:
 Add to docker group
 
 Run commands as `ubuntu` user:
- 
-`sudo usermod -aG docker ubuntu`
 
 `sudo usermod -aG docker $USER`
+
+Log off `ubuntu` user and log back in to `ubuntu` user 
+
+Check groups with:
+
+`id -nG`
 
 ### Ubuntu 18.04 Installation Script (run w/ sudo)
 ```
