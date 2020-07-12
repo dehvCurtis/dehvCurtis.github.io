@@ -1,5 +1,5 @@
 # DevSecOps 
-## Secure CI/CD Pipeline
+## Secure CI/CD Pipeline Buildout
 
 ### AWS Cloud Specs
 
@@ -24,3 +24,9 @@
     - Manage Jenkins -> Global Tool Configuration -> Maven -> Add Maven
  - [Install Docker](https://dehvcurtis.github.io/Wiki/Docker/installation)
 
+#### Box2
+- Install Tomcat
+  - `apt install default-jre`
+  - `java -version`
+  - `apt install default-jdk`
+  - `javac -version`

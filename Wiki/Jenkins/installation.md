@@ -5,7 +5,7 @@ Installation Documentation: https://www.jenkins.io/doc/book/installing/
 ### Ubuntu 18.04
 1. Install packages
 
-`apt install openjdk-8-jdk`
+`apt install openjdk-8-jdk` /* Jenkins uses JDK8 */
 
 `wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -`
 
