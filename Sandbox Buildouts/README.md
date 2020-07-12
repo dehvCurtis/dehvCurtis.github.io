@@ -5,9 +5,9 @@
 
 Applications/Services Used
 - DefectDojo
-- Docker
-- Jenkins
+- Docker (containers)
+- Jenkins (build automation)
 - JIRA
 - Java
-- Tomcat
-- Trufflehog
+- Tomcat (web server)
+- Trufflehog (Regex Github secret scanner)
