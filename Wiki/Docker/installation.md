@@ -43,7 +43,11 @@ docker-ce:
 ### Executing the Docker Command Without Sudo
 Add to docker group
 
+Run commands as `ubuntu` user:
+ 
 `sudo usermod -aG docker ubuntu`
+
+`sudo usermod -aG docker $USER`
 
 ### Ubuntu 18.04 Installation Script (run w/ sudo)
 ```
