@@ -101,4 +101,7 @@ Add SSH key for Jenkins -> Tomcat
 ### Integrate Security Into CI/CD
 #### Set up Trufflehog
 - SSH into Box1 (Jenkins)
- - `docker pull gesellix/trufflehog`
+ - `docker pull gesellix/trufflehog` https://hub.docker.com/r/gesellix/trufflehog
+ - `docker images` to confirm container image
+ - `docker run -t gesellix/trufflehog http://<github webapp repo url>.git > /tmp/truffle_output.json`
+ - [sample output](https://github.com/dehvCurtis/WebApp/blob/master/truffle_output.json)
