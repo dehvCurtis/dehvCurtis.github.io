@@ -9,7 +9,7 @@
   - box3: Docker, JIRA
   - box4: Docker, DefectDojo
   
-### Build Out
+### Server Build
 #### Box1
 - [Install Jenkins](https://dehvcurtis.github.io/Wiki/Jenkins/installation)
 - Install Jenkins Plugins
@@ -25,8 +25,11 @@
  - [Install Docker](https://dehvcurtis.github.io/Wiki/Docker/installation)
 
 #### Box2
-- Install Tomcat
-  - `apt install default-jre`
-  - `java -version`
-  - `apt install default-jdk`
-  - `javac -version`
+- [Install Tomcat](https://dehvcurtis.github.io/Wiki/Tomcat/installation)
+
+#### Box3
+#### Box4
+
+### Pipeline Build
+- On Box1
+  - Create new pipeline item

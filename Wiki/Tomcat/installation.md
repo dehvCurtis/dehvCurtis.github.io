@@ -55,4 +55,6 @@ Restart=always
 [Install]
 WantedBy=multi-user.target
 ```
-  - ``
+- Open Port
+  - port 8080
+  - confirm working via http://`<ip address>`:8080

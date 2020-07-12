@@ -1,22 +1,15 @@
-# dehvCurtis.github.io
+This is a sample Web Application to use during Continuous Integration demos.
 
-## Sandbox Builds
+#Build Instruction
 
-### DevSecOps
-  - [Secure CI/CD Pipeline (DefectDojo, Java, Jenkins, JIRA, Tomcat)](https://dehvcurtis.github.io/Sandbox%20Buildouts/DevSecOps/DJJJT/djjjt)
+```
+mvn3 clean package
+```
 
-## Wiki
+#Deploy instruction
 
-#### Docker
-[Installation](https://dehvcurtis.github.io/Wiki/Docker/installation)
-
-#### Jenkins
-[Installation](https://dehvcurtis.github.io/Wiki/Jenkins/installation)
-
-#### Linux
-CentOS 7
-  - Incremental Upgrade
-
-#### Minecraft
-[Installation](https://dehvcurtis.github.io/Wiki/Minecraft/installation)
-
+Deploy ```target/WebApp.war``` on Tomcat
+ 
+#TODO
+ 
+Add instruction to deploy to ElasticBeanstalk
