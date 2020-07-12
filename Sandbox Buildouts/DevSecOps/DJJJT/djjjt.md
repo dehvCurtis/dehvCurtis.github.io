@@ -67,7 +67,8 @@ Create new pipeline item
     - Confirm build is successful
     - Click `Open Blue Ocean` on left
     - Confirm successful build
-#    
+#
+
 ## Automating Deployment to Tomcat in Pipeline
 #### Deploy to Prod (`/opt/tomcat`)
 Add SSH key for Jenkins -> Tomcat
