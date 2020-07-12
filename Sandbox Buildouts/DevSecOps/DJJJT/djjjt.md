@@ -104,3 +104,5 @@ Add SSH key for Jenkins -> Tomcat
   - Click `webapp-cicd-pipeline` pipeline
   - Click `Build Now`
   - Confirm build is successful
+- Open browser
+ - `http://<DNS or IP Adress>:8080/webapp/`
