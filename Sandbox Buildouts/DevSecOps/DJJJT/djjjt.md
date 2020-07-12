@@ -33,8 +33,8 @@
 #### Box4
  - [Install Docker](https://dehvcurtis.github.io/Wiki/Docker/installation)
 ### Pipeline Build
-#### On Box1
 Create new pipeline item
+  - SSH into Box1
   - [Clone webapp repo](https://github.com/dehvCurtis/webapp_sample.git)
   - Open Jenkins UI
       - Click `New Item`
@@ -68,10 +68,7 @@ Create new pipeline item
     - Click `Open Blue Ocean` on left
     - Confirm successful build
 #
-
-### Automating Deployment to Tomcat in CI/CD Pipeline
-#### Deploying webapp to Prod (`/opt/tomcat`)
-
+### Automating Deployment to Tomcat in CI/CD Pipeline - Deploying webapp to Prod (`/opt/tomcat`)
 Add SSH key for Jenkins -> Tomcat
 - SSH into Box2 (Tomcat Server)
 - Add SSH key to Box1 (Jenkins)
@@ -102,3 +99,4 @@ Add SSH key for Jenkins -> Tomcat
  - You should see a bootstrap homepage
 
 ### Integrate Security Into CI/CD
+#### Set u
