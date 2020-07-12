@@ -71,4 +71,4 @@ Create new pipeline item
 #### Deploy to Prod (`/opt/tomcat`)
 Add SSH key for Jenkins -> Tomcat
 - SSH into Box2 (Tomcat Server)
-- Create SSH key
+- [Create SSH key](https://dehvcurtis.github.io/Wiki/Linux/SSH/)
