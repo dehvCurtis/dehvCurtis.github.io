@@ -78,6 +78,8 @@ Add SSH key for Jenkins -> Tomcat
   - Log on to Box1 (Jenkins)
   - `nano ~/.ssh/<key>.pem` use same key name as local machine
   - `chmod 400 ~/.ssh/<key>.pem`
+  - While we are on this box, let's give webapp enough permissions. Make sure you are logged into Box2 as `ubuntu` user
+  - `chmod 770 /opt/tomcat/webapps/`
 - Open Jenkins UI
   - Click `Jenkins > Credentials > System > Global credentials (unrestricted) > Add Credentials`
     - Kind: `SSH Username with private key`
@@ -87,12 +89,12 @@ Add SSH key for Jenkins -> Tomcat
     - Private Key: `<paste private key from above>`
 
 - Open `Jenkinsfile` in GitHub webapp repo
-  - Add the following to the `Jenkinsfile` [example](https://github.com/dehvCurtis/webapp_sample/blob/master/Jenkinsfile). Commit so Jenkins will see the update
+  - Add the following to the `Jenkinsfile` [example](https://github.com/dehvCurtis/webapp_sample/blob/master/Jenkinsfile). Don't forget to add your IP address. Commit so Jenkins will see the update
 ```yaml
     stage ('Tomcat-Deploy') {
       steps {
         sshagent(['tomcat_server']) {
-          sh 'scp -o StrictHostKeyChecking=no target/*.war ubuntu@13.52.102.33:/opt/tomcat/webapps/webapp.war'
+          sh 'scp -o StrictHostKeyChecking=no target/*.war ubuntu@<ip_address>:/opt/tomcat/webapps/webapp.war'
         }
       }
     }
