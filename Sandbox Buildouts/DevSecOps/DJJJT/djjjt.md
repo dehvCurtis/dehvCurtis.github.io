@@ -86,8 +86,8 @@ Add SSH key for Jenkins -> Tomcat
     - Username: `ubuntu`
     - Private Key: `<paste private key from above>`
 
-- Open `Jenkinsfile` in webapp repo
-  - Add the following to the `Jenkinsfile` and commit so Jenkins will see the update
+- Open `Jenkinsfile` in GitHub webapp repo
+  - Add the following to the `Jenkinsfile` [example](https://github.com/dehvCurtis/webapp_sample/blob/master/Jenkinsfile). Commit so Jenkins will see the update
 ```yaml
     stage ('Tomcat-Deploy') {
       steps {
@@ -98,3 +98,7 @@ Add SSH key for Jenkins -> Tomcat
     }
 ```
 
+- Open Jenkins UI
+  - Click `webapp-cicd-pipeline` pipeline
+  - Click `Build Now`
+  - Confirm build is successful
