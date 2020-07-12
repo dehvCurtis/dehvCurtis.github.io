@@ -69,7 +69,7 @@ Create new pipeline item
     - Confirm successful build
 #
 
-### Automating Deployment to Tomcat in Pipeline
+### Automating Deployment to Tomcat in CI/CD Pipeline
 #### Deploying webapp to Prod (`/opt/tomcat`)
 
 Add SSH key for Jenkins -> Tomcat
