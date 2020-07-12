@@ -12,15 +12,15 @@
 ### Build Out
 #### Box1
 - [Install Jenkins](https://dehvcurtis.github.io/Wiki/Jenkins/installation)
-- Install Maven
-
-  - `apt install maven`
-  - `mvn -version`
 - Install Jenkins Plugins
   - Maven Integration
-  - Blue Ocean
+  - BlueOcean Aggregator
   - Deploy To Container
   - SSH Agent
-
+- Install Maven
+  - `apt install maven`
+  - `mvn -version`
+  - Add maven install directory `/usr/share/maven/` to Jenkins Global Tool Configuration
+    - Manage Jenkins -> Global Tool Configuration -> Maven -> Add Maven
  - [Install Docker](https://dehvcurtis.github.io/Wiki/Docker/installation)
 
