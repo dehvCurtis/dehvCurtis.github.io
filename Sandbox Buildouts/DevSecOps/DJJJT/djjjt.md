@@ -1,5 +1,5 @@
 # DevSecOps 
-## Secure CI/CD Pipeline Buildout
+## Secure CI/CD Pipeline Build-out
 #### DJJJT = Docker, Java, Jenkins, JIRA, Tomcat
 #
 ### AWS Cloud Specs
