@@ -72,3 +72,12 @@ Create new pipeline item
 Add SSH key for Jenkins -> Tomcat
 - SSH into Box2 (Tomcat Server)
 - [Create SSH key](https://dehvcurtis.github.io/Wiki/Linux/SSH/)
+- Open Jenkins UI
+  - Click `Jenkins > Credentials > System > Global credentials (unrestricted) > Add Credentials`
+    - Kind: `SSH Username with private key`
+    - ID: `tomcat_server`
+    - Description: `Tomcat Server`
+    - Username: `ubuntu`
+    - Private Key: `<paste private key created above>`
+    
+  
