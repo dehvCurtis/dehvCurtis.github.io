@@ -81,3 +81,12 @@ Add SSH key for Jenkins -> Tomcat
     - Private Key: `<paste private key created above>`
     
 - Add the following to the `Jenkinsfile`
+```yaml
+    stage ('Tomcat-Deploy') {
+      steps {
+        sshagent(['tomcat_server']) {
+          sh 'scp -o StrictHostKeyChecking=no target/*.war ubuntu@13.52.102.33:/opt/tomcat/webapps/webapp.war'
+        }
+      }
+    }
+```
