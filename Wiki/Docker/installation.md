@@ -41,7 +41,7 @@ docker-ce:
 `systemctl status docker`
 
 ### Executing the Docker Command Without Sudo
-`sudo usermod -aG docker ubuntu`
+Add to docker group
 
 `sudo usermod -aG docker ubuntu`
 
