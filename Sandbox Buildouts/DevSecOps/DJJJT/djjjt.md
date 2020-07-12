@@ -69,8 +69,9 @@ Create new pipeline item
     - Confirm successful build
 #
 
-## Deploying WebApp to Prod & Automating Deployment to Tomcat in Pipeline
-#### Deploy to Prod (`/opt/tomcat`)
+### Automating Deployment to Tomcat in Pipeline
+#### Deploying to Prod (`/opt/tomcat`)
+
 Add SSH key for Jenkins -> Tomcat
 - SSH into Box2 (Tomcat Server)
 - Add SSH key to Box1 (Jenkins)
