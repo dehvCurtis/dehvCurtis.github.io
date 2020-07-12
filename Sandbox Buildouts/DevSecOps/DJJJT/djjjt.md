@@ -58,7 +58,7 @@ Create new pipeline item
           - Click `Manage Jenkins` > `Global Tool Configuration`
           - Under `Git` section, Check the `Install automatically` box
   - Open `webapp` Git Repo
-    - Create `Jenkinsfile` file - [example](https://github.com/dehvCurtis/webapp_sample/blob/master/Jenkinsfile.old)
+    - Create `Jenkinsfile` file - [example](https://github.com/dehvCurtis/webapp_sample/blob/master/Jenkinsfile.stage1)
     - Commit changes
   - Open Jenkins UI
     - Click on `webapp-cicd-pipeline` pipeline
@@ -99,10 +99,10 @@ Add SSH key for Jenkins -> Tomcat
       }
     }
 ```
-
 - Open Jenkins UI
   - Click `webapp-cicd-pipeline` pipeline
   - Click `Build Now`
   - Confirm build is successful
 - Open browser
  - `http://<DNS or IP Adress>:8080/webapp/`
+ - You should see a bootstrap homepage
