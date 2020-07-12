@@ -8,7 +8,7 @@
   - box2: Java, Tomcat
   - box3: Docker, JIRA
   - box4: Docker, DefectDojo
- # 
+#
 ### Server Build
 #### Box1
 - [Install Jenkins](https://dehvcurtis.github.io/Wiki/Jenkins/installation)
@@ -58,3 +58,12 @@ Create new pipeline item
           - Under `Git` section, Check the `Install automatically` box
   - Open `webapp` Git Repo
     - Create `Jenkinsfile` file - [example](https://github.com/dehvCurtis/webapp_sample/blob/master/Jenkinsfile)
+    - Commit changes
+  - Open Jenkins UI
+    - Click on `webapp-cicd-pipeline` pipeline
+    - Click `Build Now` on left
+    - Confirm build is successful
+    - Click `Open Blue Ocean` on left
+    - Confirm build
+#    
+### Automating Deployment to Tomcat in Pipeline
