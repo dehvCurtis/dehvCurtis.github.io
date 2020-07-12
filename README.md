@@ -1,15 +1,4 @@
-This is a sample Web Application to use during Continuous Integration demos.
+# dehvCurtis.github.io
 
-#Build Instruction
-
-```
-mvn3 clean package
-```
-
-#Deploy instruction
-
-Deploy ```target/WebApp.war``` on Tomcat
- 
-#TODO
- 
-Add instruction to deploy to ElasticBeanstalk
+[Sandbox Builds]()
+[Wiki]
