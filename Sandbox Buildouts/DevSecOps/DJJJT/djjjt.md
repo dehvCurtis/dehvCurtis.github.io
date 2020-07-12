@@ -10,6 +10,7 @@
   - box3: Docker, JIRA
   - box4: Docker, DefectDojo
 #
+
 ### Server Build
 #### Box1
 - [Install Jenkins](https://dehvcurtis.github.io/Wiki/Jenkins/installation)
@@ -32,6 +33,7 @@
  - [Install Docker](https://dehvcurtis.github.io/Wiki/Docker/installation)
 #### Box4
  - [Install Docker](https://dehvcurtis.github.io/Wiki/Docker/installation)
+ 
 ### Pipeline Build
 Create new pipeline item
   - SSH into Box1
@@ -67,7 +69,7 @@ Create new pipeline item
     - Confirm build is successful
     - Click `Open Blue Ocean` on left
     - Confirm successful build
-#
+
 ### Automating Deployment to Tomcat in CI/CD Pipeline - Deploying webapp to Prod (`/opt/tomcat`)
 Add SSH key for Jenkins -> Tomcat
 - SSH into Box2 (Tomcat Server)
@@ -109,6 +111,7 @@ Add SSH key for Jenkins -> Tomcat
   - confirm successful
 - Open `Jenkinsfile` in GitHub webapp repo
   - Add the following to the `Jenkinsfile` [example](https://github.com/dehvCurtis/WebApp/blob/master/Jenkinsfile.stage3)
+  - Be sure to add security check before the build process, since we are looking for hidden secrets
 - Open Jenkins UI
   - Click `webapp-cicd-pipeline` pipeline
   - Click `Build Now`
