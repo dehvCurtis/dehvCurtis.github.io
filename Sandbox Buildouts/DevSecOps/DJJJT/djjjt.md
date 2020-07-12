@@ -1,7 +1,7 @@
 # DevSecOps 
 ## Secure CI/CD Pipeline Buildout
-##
-
+#### DJJJT = Docker, Java, Jenkins, JIRA, Tomcat
+#
 ### AWS Cloud Specs
 
 - 4 EC2 Ubuntu 18.04 Boxes
