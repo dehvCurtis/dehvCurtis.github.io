@@ -80,4 +80,4 @@ Add SSH key for Jenkins -> Tomcat
     - Username: `ubuntu`
     - Private Key: `<paste private key created above>`
     
-  
+- Add the following to the `Jenkinsfile`
