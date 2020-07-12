@@ -35,7 +35,8 @@
 Create new pipeline item
   - [Clone webapp repo](https://github.com/dehvCurtis/webapp_sample.git)
   - Open Jenkins UI
-      - Click `New Item` and name item
+      - Click `New Item`
+      - Name item `webapp-cicd-pipeline`
       - Select `Pipeline` option and click `ok`
       - Under `General` tab
         - Add description `DevSecOps pipeline demo`
@@ -52,5 +53,8 @@ Create new pipeline item
             - Repository URL: [webapp repo](https://github.com/dehvCurtis/webapp_sample.git)
             - Branches to build: `*/master` branch
         - Click `Save`
+        - Go to Jenkins home in dashboard
+          - Click `Manage Jenkins` > `Global Tool Configuration`
+          - Under `Git` section, Check the `Install automatically` box
   - Open `webapp` Git Repo
-    - Create `Jenkinsfile` file
+    - Create `Jenkinsfile` file - [example](https://github.com/dehvCurtis/webapp_sample/blob/master/Jenkinsfile)
