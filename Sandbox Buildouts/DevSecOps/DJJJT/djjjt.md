@@ -28,8 +28,9 @@
 - [Install Tomcat](https://dehvcurtis.github.io/Wiki/Tomcat/installation)
 
 #### Box3
+ - [Install Docker](https://dehvcurtis.github.io/Wiki/Docker/installation)
 #### Box4
-#
+ - [Install Docker](https://dehvcurtis.github.io/Wiki/Docker/installation)
 ### Pipeline Build
 #### On Box1
 Create new pipeline item
@@ -64,6 +65,10 @@ Create new pipeline item
     - Click `Build Now` on left
     - Confirm build is successful
     - Click `Open Blue Ocean` on left
-    - Confirm build
+    - Confirm successful build
 #    
-### Automating Deployment to Tomcat in Pipeline
+## Automating Deployment to Tomcat in Pipeline
+#### Deploy to Prod (`/opt/tomcat`)
+Add SSH key for Jenkins -> Tomcat
+- SSH into Box2 (Tomcat Server)
+- Create SSH key
