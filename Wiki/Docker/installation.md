@@ -40,6 +40,11 @@ docker-ce:
 8. Check status
 `systemctl status docker`
 
+### Executing the Docker Command Without Sudo
+`sudo usermod -aG docker ubuntu`
+
+`sudo usermod -aG docker ubuntu`
+
 ### Ubuntu 18.04 Installation Script (run w/ sudo)
 ```
 apt update
