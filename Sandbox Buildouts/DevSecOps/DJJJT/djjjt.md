@@ -121,4 +121,4 @@ Add SSH key for Jenkins -> Tomcat
     
     `docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.40/containers/create: dial unix /var/run/docker.sock: connect: permission denied.`
     - run `sudo chmod 666 /var/run/docker.sock` 
-    - rerun build
+    - rerun Jenkins build
