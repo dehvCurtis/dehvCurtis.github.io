@@ -13,6 +13,6 @@
 - [Installation](https://dehvcurtis.github.io/Wiki/Jenkins/installation)
 #### Linux
 - CentOS 7
-    - Incremental Upgrade
+  - Incremental Upgrade
 #### Minecraft
 - [Installation](https://dehvcurtis.github.io/Wiki/Minecraft/installation)
