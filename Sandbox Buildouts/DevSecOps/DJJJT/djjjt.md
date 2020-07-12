@@ -33,22 +33,24 @@
 ### Pipeline Build
 #### On Box1
 Create new pipeline item
-  - [Clone webapp repo](https://github.com/dehvCurtis/WebApp_Samples)
+  - [Clone webapp repo](https://github.com/dehvCurtis/webapp_sample.git)
   - Open Jenkins UI
-  - Click `New Item` and name item
-  - Select `Pipeline` option and click `ok`
-  - Under `General` tab
-    - Add description `DevSecOps pipeline demo`
-    - Check `Discard old builds` box
-      - `Max # of builds to keep`: 2
-    - Check `GitHub project` box
-      - Add [webapp repo](https://github.com/dehvCurtis/WebApp_Samples) url
-    - Check `GitHub hook trigger for GITScm polling` box (monitors for new commits)
-    - Check `Poll SCM Schedule` box
-      - Add `* * * * *` (cron formatting)
-    - Define pipeline
-      - Definition: `Pipeline script from SCM`
-      - SCM: `Git`
-        - Repository URL: [webapp repo](https://github.com/dehvCurtis/WebApp_Samples)
-        - Branches to build: `*/master` branch
-    - Click `Save`
+      - Click `New Item` and name item
+      - Select `Pipeline` option and click `ok`
+      - Under `General` tab
+        - Add description `DevSecOps pipeline demo`
+        - Check `Discard old builds` box
+          - `Max # of builds to keep`: 2
+        - Check `GitHub project` box
+          - Add [webapp repo](https://github.com/dehvCurtis/webapp_sample.git) url
+        - Check `GitHub hook trigger for GITScm polling` box (monitors for new commits)
+        - Check `Poll SCM Schedule` box
+          - Add `* * * * *` (cron formatting)
+        - Define pipeline
+          - Definition: `Pipeline script from SCM`
+          - SCM: `Git`
+            - Repository URL: [webapp repo](https://github.com/dehvCurtis/webapp_sample.git)
+            - Branches to build: `*/master` branch
+        - Click `Save`
+  - Open `webapp` Git Repo
+    - Create `Jenkinsfile` file
