@@ -99,4 +99,6 @@ Add SSH key for Jenkins -> Tomcat
  - You should see a bootstrap homepage
 
 ### Integrate Security Into CI/CD
-#### Set u
+#### Set up Trufflehog
+- SSH into Box1 (Jenkins)
+ - `docker pull gesellix/trufflehog`

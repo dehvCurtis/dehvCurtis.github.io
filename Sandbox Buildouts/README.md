@@ -10,4 +10,4 @@ Applications/Services Used
 - JIRA
 - Java
 - Tomcat (web server)
-- Trufflehog (Regex Github secret scanner)
+- Trufflehog container (Regex Github secret scanner)
