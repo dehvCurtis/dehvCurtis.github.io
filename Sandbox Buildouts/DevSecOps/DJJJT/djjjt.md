@@ -58,7 +58,7 @@ Create new pipeline item
           - Click `Manage Jenkins` > `Global Tool Configuration`
           - Under `Git` section, Check the `Install automatically` box
   - Open `webapp` Git Repo
-    - Create `Jenkinsfile` file - [example](https://github.com/dehvCurtis/webapp_sample/blob/master/Jenkinsfile)
+    - Create `Jenkinsfile` file - [example](https://github.com/dehvCurtis/webapp_sample/blob/master/Jenkinsfile.old)
     - Commit changes
   - Open Jenkins UI
     - Click on `webapp-cicd-pipeline` pipeline
@@ -84,9 +84,10 @@ Add SSH key for Jenkins -> Tomcat
     - ID: `tomcat_server`
     - Description: `Tomcat Server`
     - Username: `ubuntu`
-    - Private Key: `<paste private key created above>`
-    
-- Add the following to the `Jenkinsfile` and commit so Jenkins will see the update
+    - Private Key: `<paste private key from above>`
+
+- Open `Jenkinsfile` in webapp repo
+  - Add the following to the `Jenkinsfile` and commit so Jenkins will see the update
 ```yaml
     stage ('Tomcat-Deploy') {
       steps {
