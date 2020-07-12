@@ -1,10 +1,11 @@
 # DevSecOps 
 ## Secure CI/CD Pipeline Buildout
+##
 
 ### AWS Cloud Specs
 
 - 4 EC2 Ubuntu 18.04 Boxes
-  - box1: Jenkins, Docker, Java, Maven
+  - box1: Docker, Jenkins, Java, Maven
   - box2: Java, Tomcat
   - box3: Docker, JIRA
   - box4: Docker, DefectDojo
