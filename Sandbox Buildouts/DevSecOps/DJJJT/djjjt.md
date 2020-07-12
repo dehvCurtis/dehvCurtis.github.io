@@ -95,13 +95,23 @@ Add SSH key for Jenkins -> Tomcat
   - Click `Build Now`
   - Confirm build is successful
 - Open browser
- - `http://<DNS or IP Adress>:8080/webapp/`
- - You should see a bootstrap homepage
+  - `http://<DNS or IP Adress>:8080/webapp/`
+  - You should see a bootstrap homepage
 
 ### Integrate Security Into CI/CD
 #### Set up Trufflehog
-- SSH into Box1 (Jenkins)
- - `docker pull gesellix/trufflehog` https://hub.docker.com/r/gesellix/trufflehog
- - `docker images` to confirm container image
- - `docker run -t gesellix/trufflehog http://<github webapp repo url>.git > /tmp/truffle_output.json`
- - [sample output](https://github.com/dehvCurtis/WebApp/blob/master/truffle_output.json)
+- SSH into Box1 (Jenkins) to test docker job
+  - `docker pull gesellix/trufflehog` https://hub.docker.com/r/gesellix/trufflehog
+  - `docker images` to confirm container image
+  - `docker run -t gesellix/trufflehog http://<github webapp repo url>.git > /tmp/truffle_output.json`
+  - [sample output](https://github.com/dehvCurtis/WebApp/blob/master/truffle_output.json)
+  - be sure `ubuntu` user is part of docker group
+- Open Jenkins UI
+  - Click `webapp-cicd-pipeline` pipeline
+  - Click `Build Now`
+  - Click dot to check output
+    - if permissions error similar to 
+    
+    `docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.40/containers/create: dial unix /var/run/docker.sock: connect: permission denied.`
+    - run `sudo chmod 666 /var/run/docker.sock` 
+    - rerun build
