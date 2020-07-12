@@ -35,7 +35,7 @@
 ### Pipeline Build
 Create new pipeline item
   - SSH into Box1
-  - [Clone webapp repo](https://github.com/dehvCurtis/webapp_sample.git)
+  - [Clone webapp repo](https://github.com/dehvCurtis/WebApp.git)
   - Open Jenkins UI
       - Click `New Item`
       - Name item `webapp-cicd-pipeline`
@@ -45,21 +45,21 @@ Create new pipeline item
         - Check `Discard old builds` box
           - `Max # of builds to keep`: 2
         - Check `GitHub project` box
-          - Add [webapp repo](https://github.com/dehvCurtis/webapp_sample.git) url
+          - Add [webapp repo](https://github.com/dehvCurtis/WebApp.git) url
         - Check `GitHub hook trigger for GITScm polling` box (monitors for new commits)
         - Check `Poll SCM Schedule` box
           - Add `* * * * *` (cron formatting)
         - Define pipeline
           - Definition: `Pipeline script from SCM`
           - SCM: `Git`
-            - Repository URL: [webapp repo](https://github.com/dehvCurtis/webapp_sample.git)
+            - Repository URL: [webapp repo](https://github.com/dehvCurtis/WebApp.git)
             - Branches to build: `*/master` branch
         - Click `Save`
         - Go to Jenkins home in dashboard
           - Click `Manage Jenkins` > `Global Tool Configuration`
           - Under `Git` section, Check the `Install automatically` box
   - Open `webapp` Git Repo
-    - Create `Jenkinsfile` file with no extension - [example](https://github.com/dehvCurtis/webapp_sample/blob/master/Jenkinsfile.stage1)
+    - Create `Jenkinsfile` file with no extension - [example](https://github.com/dehvCurtis/WebApp/blob/master/Jenkinsfile.stage1)
     - Commit changes
   - Open Jenkins UI
     - Click on `webapp-cicd-pipeline` pipeline
@@ -89,7 +89,7 @@ Add SSH key for Jenkins -> Tomcat
     - Private Key: `<paste private key from above>`
 
 - Open `Jenkinsfile` in GitHub webapp repo
-  - Add the following to the `Jenkinsfile` [example](https://github.com/dehvCurtis/webapp_sample/blob/master/Jenkinsfile.stage2). Don't forget to add your IP address. Commit so Jenkins will see the update
+  - Add the following to the `Jenkinsfile` [example]
 - Open Jenkins UI
   - Click `webapp-cicd-pipeline` pipeline
   - Click `Build Now`
@@ -106,6 +106,9 @@ Add SSH key for Jenkins -> Tomcat
   - `docker run -t gesellix/trufflehog http://<github webapp repo url>.git > /tmp/truffle_output.json`
   - [sample output](https://github.com/dehvCurtis/WebApp/blob/master/truffle_output.json)
   - be sure `ubuntu` user is part of docker group
+  - confirm successful
+- Open `Jenkinsfile` in GitHub webapp repo
+  - Add the following to the `Jenkinsfile` [example](https://github.com/dehvCurtis/WebApp/blob/master/Jenkinsfile.stage3)
 - Open Jenkins UI
   - Click `webapp-cicd-pipeline` pipeline
   - Click `Build Now`
