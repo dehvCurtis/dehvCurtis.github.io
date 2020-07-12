@@ -100,3 +100,5 @@ Add SSH key for Jenkins -> Tomcat
 - Open browser
  - `http://<DNS or IP Adress>:8080/webapp/`
  - You should see a bootstrap homepage
+
+### Integrate Git Secrets into Pipeline
