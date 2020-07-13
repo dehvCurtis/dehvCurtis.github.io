@@ -134,7 +134,7 @@ OWASP Dependency Check Setup
 - Copy latest script from https://hub.docker.com/r/owasp/dependency-check/ to `owasp-dependency-check.sh`
 - Create test file on Box1 (Jenkins)
 - Run script manually to download all dependencies (Jenkins tends to timeout)
-  - `wget htttp://<script url github>` be sure to grab the raw URL
+  - `wget htttp://https://raw.githubusercontent.com/dehvCurtis/WebApp/master/owasp-dependency-check.sh`
   - `chmod +x owasp-dependency-check.sh`
   - `./owasp-dependency-check.sh`
 - Open `Jenkinsfile` in GitHub webapp repo
