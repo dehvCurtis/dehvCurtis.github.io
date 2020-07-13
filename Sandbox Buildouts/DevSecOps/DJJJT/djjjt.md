@@ -127,3 +127,11 @@ Add SSH key for Jenkins -> Tomcat
     
 #### Set up OWASP Dependency Check for Source Composition Analysis
 
+OWASP Dependency Check Setup
+- Create owasp file in webapp folder 
+    
+    `nano <absolute path>/owasp-dependency-check.sh`
+- Copy latest script from https://hub.docker.com/r/owasp/dependency-check/ to `owasp-dependency-check.sh`
+- Open `Jenkinsfile` in GitHub webapp repo
+  - Add the following to the `Jenkinsfile` [example](https://github.com/dehvCurtis/WebApp/blob/master/Jenkinsfile.stage4)
+  
