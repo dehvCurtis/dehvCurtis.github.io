@@ -134,4 +134,7 @@ OWASP Dependency Check Setup
 - Copy latest script from https://hub.docker.com/r/owasp/dependency-check/ to `owasp-dependency-check.sh`
 - Open `Jenkinsfile` in GitHub webapp repo
   - Add the following to the `Jenkinsfile` [example](https://github.com/dehvCurtis/WebApp/blob/master/Jenkinsfile.stage4)
-  
+- Open Jenkins UI
+  - Click `webapp-cicd-pipeline` pipeline
+  - Click `Build Now`
+  - Click dot to check output  
