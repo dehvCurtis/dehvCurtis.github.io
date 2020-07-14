@@ -27,9 +27,7 @@
 - Create a systemd Service File
   - `update-java-alternatives -l`
   - `sudo nano /etc/systemd/system/tomcat.service`
-  - Add the following and run 
-  
-`systemctl daemon-reload && systemctl start tomcat`
+  - Add the following
 
 ```
 [Unit]
@@ -58,6 +56,10 @@ Restart=always
 [Install]
 WantedBy=multi-user.target
 ```
+
+Run
+  
+`systemctl daemon-reload && systemctl start tomcat`
 
 - Open Port
   - port 8080
