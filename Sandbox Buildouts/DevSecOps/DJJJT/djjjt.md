@@ -24,6 +24,9 @@
   - `mvn -version`
   - Add maven install directory `/usr/share/maven/` to Jenkins Global Tool Configuration
     - Manage Jenkins -> Global Tool Configuration -> Maven -> Add Maven
+    - Remove `Install Automatically` check box
+    - Name: `Maven`
+    - MAVEN_HOME: `/usr/share/maven`
  - [Install Docker](https://dehvcurtis.github.io/Wiki/Docker/installation)
 
 #### Box2
