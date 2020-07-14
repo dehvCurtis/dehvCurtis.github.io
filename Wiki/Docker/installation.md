@@ -7,27 +7,27 @@
 
 The Docker installation package available in the official Ubuntu repository may not be the latest version. To ensure we get the latest version, install Docker from the official Docker repository by performing the following
 
-1. Update your existing list of packages
+Update your existing list of packages
 
 `sudo apt update`
 
-2. Install prerequisite packages for package use over HTTPS
+Install prerequisite packages for package use over HTTPS
 
 `sudo apt install apt-transport-https ca-certificates curl software-properties-common`
 
-3. Add the GPG key for the official Docker repository to your system
+Add the GPG key for the official Docker repository to your system
 
 `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
 
-4. Add the Docker repository to APT sources
+Add the Docker repository to APT sources
 
 `sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"`
 
-5. Update the package database with the Docker packages from the newly added repo
+Update the package database with the Docker packages from the newly added repo
 
 `sudo apt update`
 
-6. Ensure you are about to install from the Docker repo
+Ensure you are about to install from the Docker repo
 
 `apt-cache policy docker-ce`
 
@@ -42,11 +42,11 @@ docker-ce:
         500 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages
 ```
 
-7. Install Docker
+Install Docker
 
 `apt install docker-ce`
 
-8. Check status
+Check status
 
 `systemctl status docker`
 
