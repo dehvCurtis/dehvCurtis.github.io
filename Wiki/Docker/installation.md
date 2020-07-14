@@ -44,7 +44,7 @@ docker-ce:
 
 Install Docker
 
-`apt install docker-ce`
+`sudo apt install docker-ce`
 
 Check status
 
