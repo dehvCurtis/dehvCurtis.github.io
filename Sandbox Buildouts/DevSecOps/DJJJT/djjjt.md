@@ -36,8 +36,9 @@
  
 ### Pipeline Build
 Create new pipeline item
-  - SSH into Box1
-  - [Clone webapp repo](https://github.com/dehvCurtis/WebApp.git)
+
+SSH into Box1
+  - [Clone webapp repo](https://github.com/dehvCurtis/WebApp.git) locally and create your own WebApp repo
   - Open Jenkins UI
       - Click `New Item`
       - Name item `webapp-cicd-pipeline`
@@ -73,7 +74,7 @@ Create new pipeline item
 ### Automating Deployment to Tomcat in CI/CD Pipeline - Deploying webapp to Prod (`/opt/tomcat`)
 
 Add SSH key for Jenkins -> Tomcat
-- SSH into Box2 (Tomcat Server)
+SSH into Box2 (Tomcat Server)
 - Add SSH key to Box1 (Jenkins)
   - For this walkthrough, I'll be using the SSH key I use to connect my Mac to my AWS nodes. This is not a secure practice.
   - On Local Machine, get AWS SSH key
