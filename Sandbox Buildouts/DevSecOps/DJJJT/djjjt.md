@@ -48,14 +48,14 @@ SSH into Box1
         - Check `Discard old builds` box
           - `Max # of builds to keep`: 2
         - Check `GitHub project` box
-          - Add [webapp repo](https://github.com/dehvCurtis/WebApp.git) url
+          - Add your webapp Git repo url
         - Check `GitHub hook trigger for GITScm polling` box (monitors for new commits)
         - Check `Poll SCM Schedule` box
           - Add `* * * * *` (cron formatting)
         - Define pipeline
           - Definition: `Pipeline script from SCM`
           - SCM: `Git`
-            - Repository URL: [webapp repo](https://github.com/dehvCurtis/WebApp.git)
+            - Git WebApp Repository URL
             - Branches to build: `*/master` branch
         - Click `Save`
         - Go to Jenkins home in dashboard
