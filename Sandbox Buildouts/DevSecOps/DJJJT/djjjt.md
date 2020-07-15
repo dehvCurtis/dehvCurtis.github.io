@@ -85,7 +85,7 @@ SSH into Box2 (Tomcat Server)
   - Log on to Box1 (Jenkins)
   - `nano ~/.ssh/<key>.pem` use same key name as local machine
   - `chmod 400 ~/.ssh/<key>.pem`
-  - While we are on this box, let's give webapp enough permissions. Make sure you are logged into Box2 as `ubuntu` user
+  - Let's give webapp enough permissions. Make sure you are logged into Box2 as `ubuntu` user
   - `chmod 770 /opt/tomcat/webapps/`
 - Open Jenkins UI
   - Click `Jenkins > Credentials > System > Global credentials (unrestricted) > Add Credentials`
