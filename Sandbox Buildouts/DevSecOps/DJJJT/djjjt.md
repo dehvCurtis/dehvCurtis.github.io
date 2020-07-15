@@ -96,7 +96,7 @@ SSH into Box2 (Tomcat Server)
     - Private Key: `<paste private key from above>`
 
 - Open `Jenkinsfile` in GitHub webapp repo
-  - Add the following to the `Jenkinsfile` [example]
+  - Add the following to the `Jenkinsfile` [example](https://github.com/dehvCurtis/WebApp/blob/master/Jenkinsfile.stage2)
 - Open Jenkins UI
   - Click `webapp-cicd-pipeline` pipeline
   - Click `Build Now`
