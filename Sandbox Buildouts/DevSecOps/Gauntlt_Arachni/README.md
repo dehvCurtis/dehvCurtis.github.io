@@ -16,4 +16,14 @@ docker ps
 Install Gauntlt
 Clone `https://github.com/gauntlt/gauntlt-docker.git`
 
+`cd gauntlt-docker`
+
 [Replace Dockerfile with custom](https://github.com/dehvCurtis/Tools/blob/master/DevSecOps/Containers/Guantlt_custom/Dockerfile)
+
+Options: `make help`
+
+Log in to box:
+
+`docker run --rm -it --entrypoint /bin/bash gauntlt`
+
+Test
