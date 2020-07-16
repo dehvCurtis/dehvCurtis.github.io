@@ -11,3 +11,6 @@ Applications/Services Used
 - Java
 - Tomcat (web server)
 - Trufflehog container (Regex Github secret scanner)
+
+## Gauntlt Arachni Installation
+### [Web Application Scan]()
