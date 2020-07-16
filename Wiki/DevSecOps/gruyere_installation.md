@@ -2,7 +2,4 @@
 
 install & start script
 
-```bash
-docker pull karthequian/gruyere:latest
-docker run --rm -d -p 8008:8008 karthequian/gruyere:latest
-```
+https://github.com/dehvCurtis/Scripts/blob/master/DevSecOps/gruyere_installation.sh
